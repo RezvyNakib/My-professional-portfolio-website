@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Rezvine Enjoy Nakib | Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --dark-bg: #0f172a;
+            --text-light: #f8fafc;
+            --text-gray: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--dark-bg);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        .nav-links a { color: white; margin-left: 20px; text-decoration: none; font-size: 0.9rem; }
+
+        /* Hero Section */
+        header {
+            background: var(--dark-bg);
+            color: white;
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { color: var(--text-gray); font-size: 1.2rem; }
+
+        /* Section Styling */
+        section { padding: 60px 10%; }
+        h2 { border-bottom: 3px solid var(--primary-color); display: inline-block; margin-bottom: 30px; }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        .tag {
+            background: #dbeafe;
+            color: var(--primary-color);
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-bg);
+            color: var(--text-gray);
+            text-align: center;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Nakib.dev</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Md. Rezvine Enjoy Nakib</h1>
+        <p>Software Engineering Student | Graphics Enthusiast</p>
+        <a href="mailto:rezvynakib1244@gmail.com" class="btn">Say Hello</a>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>A passionate Software Engineering student at <strong>American International University-Bangladesh (AIUB)</strong>. I love solving problems through code and have a deep interest in software development and computer graphics.</p>
+    </section>
+
+    <section id="skills" style="background: #e2e8f0;">
+        <h2>Technical Skills</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Languages</h3>
+                <p>C, C++, Python, JavaScript</p>
+            </div>
+            <div class="card">
+                <h3>Graphics & Tools</h3>
+                <p>OpenGL, GLUT, Git, VS Code</p>
+            </div>
+            <div class="card">
+                <h3>Web Technologies</h3>
+                <p>HTML5, CSS3, Bootstrap</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Urban Highway Motion</h3>
+                <p>An interactive traffic simulation project using OpenGL and GLUT. Focuses on coordinate mapping and smooth object motion.</p>
+                <span class="tag">C++</span> <span class="tag">OpenGL</span>
+            </div>
+            <div class="card">
+                <h3>Automated Attendance System</h3>
+                <p>A thesis proposal project aiming to automate student attendance using image processing techniques.</p>
+                <span class="tag">Python</span> <span class="tag">Image Processing</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Activities</h2>
+        <div class="card">
+            <h3>AIUB Social Welfare Club (Shomoy)</h3>
+            <p>Active member contributing to various social welfare programs and community services.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <strong>rezvynakib1244@gmail.com</strong></p>
+        <p>Phone: <strong>01796585024</strong></p>
+    </header>
+
+    <footer>
+        <p>&copy; 2026 Md. Rezvine Enjoy Nakib. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
